@@ -23,9 +23,30 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/theme-default/bootstrap.css",
+              "src/assets/css/theme-default/materialadmin.css",
+              "src/assets/css/theme-default/font-awesome.min.css",
+              "src/assets/css/theme-default/material-design-iconic-font.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/libs/jquery/jquery-migrate-1.2.1.min.js",
+//              "./node_modules/popper.js/dist/umd/popper.min.js",
+//              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/libs/bootstrap/bootstrap.min.js",
+              "src/assets/js/libs/spin.js/spin.min.js",
+              "src/assets/js/libs/autosize/jquery.autosize.min.js",
+              "src/assets/js/libs/nanoscroller/jquery.nanoscroller.min.js",
+              "src/assets/js/core/source/App.js",
+              "src/assets/js/core/source/AppNavigation.js",
+              "src/assets/js/core/source/AppOffcanvas.js",
+              "src/assets/js/core/source/AppCard.js",
+              "src/assets/js/core/source/AppForm.js",
+              "src/assets/js/core/source/AppNavSearch.js",
+              "src/assets/js/core/source/AppVendor.js",
+              "src/assets/js/core/demo/Demo.js"
+            ]
           },
           "configurations": {
             "production": {

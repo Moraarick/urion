@@ -1,0 +1,50 @@
+<!-- BEGIN MENUBAR-->
+<div id="menubar" class="menubar-inverse ">
+  <div class="menubar-fixed-panel">
+    <div>
+      <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="expanded">
+      <a href="../../html/dashboards/dashboard.html">
+        <span class="text-lg text-bold text-primary ">URION</span>
+      </a>
+    </div>
+  </div>
+  <div class="menubar-scroll-panel">
+
+    <!-- BEGIN MAIN MENU -->
+    <ul id="main-menu" class="gui-controls">
+
+      <li *ngFor="let item of items; let i = index" routerLinkActive="active" [class.gui-folder]="item.subItems.length > 0">
+        <a *ngIf="item.subItems.length == 0" routerLink = "{{item.redirect}}" [class.active]="i == 0">
+          <div class="gui-icon"><i class="md {{item.icon}}"></i></div>
+          <span class="title">{{item.content}}</span>
+        </a>
+        <a *ngIf="item.subItems.length > 0" href="javascript:void(0);">
+          <div class="gui-icon"><i class="md {{item.icon}}"></i></div>
+          <span class="title">{{item.content}}</span>
+        </a>
+        <!--start submenu -->
+        <ul *ngIf="item.subItems.length > 0">
+          <li *ngFor="let subItem of item.subItems" routerLinkActive="active">
+            <a routerLink = "{{subItem.redirect}}" >
+            <span class="title">{{subItem.content}}</span></a></li>
+        </ul>
+        <!--end /submenu -->
+      </li>
+      <!--end /menu-li -->
+
+    </ul><!--end .main-menu -->
+    <!-- END MAIN MENU -->
+
+    <!--<div class="menubar-foot-panel">-->
+      <!--<small class="no-linebreak hidden-folded">-->
+        <!--<span class="opacity-75">Copyright &copy; 2014</span> <strong>CodeCovers</strong>-->
+      <!--</small>-->
+    <!--</div>-->
+  </div><!--end .menubar-scroll-panel-->
+</div><!--end #menubar-->
+<!-- END MENUBAR -->
+
