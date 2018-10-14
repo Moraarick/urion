@@ -1,9 +1,8 @@
-<app-toolbar id="toolbar"></app-toolbar>
 <div id="base">
   <!-- BEGIN CONTENT-->
   <div id="content">
     <!-- BEGIN BLANK SECTION -->
-    <section class="animated fadeIn" style="height: 45.5em">
+    <section>
       <div class="section-header">
         <ol class="breadcrumb">
           <li><a href="../../html/.html">home</a></li>
@@ -11,7 +10,7 @@
         </ol>
       </div><!--end .section-header -->
       <div class="section-body">
-        <router-outlet></router-outlet>
+        <router-outlet class="animated fadeIn"></router-outlet>
       </div><!--end .section-body -->
     </section>
     <!-- BEGIN BLANK SECTION -->
@@ -23,4 +22,5 @@
     <app-contact></app-contact>
     <app-chat></app-chat>
   </div>
+  <app-btn-floating></app-btn-floating>
 </div>

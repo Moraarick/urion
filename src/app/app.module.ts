@@ -11,6 +11,7 @@ import { ContactComponent } from './core/contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { DocumentComponent } from './document/document.component';
+import { BtnFloatingComponent } from './core/btn-floating/btn-floating.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DocumentComponent } from './document/document.component';
     ContactComponent,
     DashboardComponent,
     EmployeeComponent,
-    DocumentComponent
+    DocumentComponent,
+    BtnFloatingComponent
   ],
   imports: [
     BrowserModule,

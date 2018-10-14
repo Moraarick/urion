@@ -1,0 +1,13 @@
+.user-avatar{
+  width: 10em;
+  height: 10em;
+  margin: 2em 0 1em 3.5em;
+}
+
+.center{
+  margin: 0 0 0 6.5em;
+}
+
+#menubar{
+  margin-top: -5em;
+}
