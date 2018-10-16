@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 const ITEMS = [
   {
@@ -34,11 +35,19 @@ const ITEMS = [
 export class MenuComponent implements OnInit {
 
   items = ITEMS;
+  public insideLocked = false;
 
-  constructor() {
+  router:Router;
+  constructor(private _router: Router) {
+    this.router = this._router;
+    console.log("Hello");
   }
 
   ngOnInit() {
+  }
+
+  myRedirect(){
+    this.router.navigate(['/locked']);
   }
 
 }
