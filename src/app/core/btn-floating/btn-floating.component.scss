@@ -13,7 +13,7 @@
   color: #fff;
   text-align: center;
   position: relative;
-  @include transition(.3s);
+  @include transition(.2s);
   @include border-radius(50%);
   cursor: pointer;
   @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.11));
@@ -40,7 +40,7 @@
   margin: auto;
   display: block;
   position: relative;
-  @include transition(.3s .3s);
+  @include transition(.2s .2s);
   &:after{
     content: '';
     position: absolute;
@@ -54,7 +54,7 @@
 .float-btn-group{
   position: relative;
   float: right;
-  @include transition(.3s);
+  @include transition(.2s);
 
   .btn-triger{
     z-index: 15;
@@ -63,15 +63,14 @@
   .btn-list{
     position: absolute;
     right: 0;
-    @include transition(.3s);
+    @include transition(.2s);
     li{
       display: inline-block;
     }
-
   }
 
   &.open{
-    .icon-bars{@include rotate(45deg)}
+    .icon-bars{@include rotate(135deg)}
   }
 }
 
@@ -80,7 +79,7 @@
     float: none;
     margin: auto;
     width: 50px;
-    .icon-bars{@include transition(.3s 1.3s)}
+    .icon-bars{@include transition(.2s 0s)}
     .btn-list{
       width: 50px;
       height: 50px;
@@ -92,15 +91,15 @@
         left: 0;
         top: 0;
         margin: auto;
-        &:nth-child(1){@include transition(.3s .3s);}
-        &:nth-child(2){@include transition(.3s .6s);}
-        &:nth-child(3){@include transition(.3s .9s);}
-        &:nth-child(4){@include transition(.3s 1.2s);}
+        &:nth-child(1){@include transition(.3s .2s);}
+        &:nth-child(2){@include transition(.3s .4s);}
+        &:nth-child(3){@include transition(.3s .6s);}
+        &:nth-child(4){@include transition(.3s .8s);}
       }
     }
 
     &.open{
-      .icon-bars{@include transition(.3s)}
+      .icon-bars{@include transition(.2s)}
       .btn-list{
         .btn-float{
           @include scale(.9);
@@ -109,7 +108,7 @@
           &:nth-child(3){left:40px; top:-65px;}
           &:nth-child(4){left:75px; top:0px;}
           &:hover{
-            @include transition(.3s);
+            @include transition(.1s);
             @include text-shadow(1px 4px 1px #666);
           }
         }
